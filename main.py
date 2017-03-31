@@ -1,3 +1,16 @@
-# A menu-driven main.py file accepting the module name and displaying it
-pmName = raw_input("Enter module name:\n 1:Enter battleship for 'battleship.py'\n 2:Enter student_to_teacher for 'students_to_teacher.py'\n 3:Enter exam_stats for 'exam_stats.py'\n")
-__import__(pmName)
+print "Which script do you want to run? :"
+print "1. Enter 1 for Student becomes Teacher."
+print "2. Enter 2 for Battleship."
+print "3. Enter 3 for Exam Statistics."
+
+choice = int(raw_input("Enter the script number you want to run : "))
+
+if choice==1 :
+    #Imports students_to_teacher.py
+    import students_to_teacher
+elif choice==2 :
+    #Imports battleship.py
+    import battleship
+elif choice==3 :
+    #Imports exam_stats.py
+    import exam_stats
